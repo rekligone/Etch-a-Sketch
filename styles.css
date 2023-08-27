@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(50, 176, 218, 0.829);
+}
+
+.grid{
+    display: grid;
+    height: 600px;
+    width: 600px;
+    border: 5px solid rgb(0, 229, 255);
+    border-radius: 8px;
+    box-shadow: 8px 8px black;
+    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(16, 2fr);
+}
+
+.cell{
+    border: 1px solid black;
+    background-color: white;
+}
+
+.slider{
+    margin-top: 50px;
+    appearance: none;
+    border-radius: 8px;
+    background: #d3d3d9;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.yarra{
+color: #7FD648;
+}
+
+.slidecontainer{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 63px;
+}
+
+.menucontainer{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.rainbow, .slidecontainer, .black{
+    appearance: none;
+    background: rgba(255, 255, 255, 0.829);
+    border: none;
+    border-radius: 16px;
+    font-size: 28px;
+    height: 60px;
+    box-shadow: 8px 8px black;
+    font-family: myFont;
+    color: rgb(106, 113, 247);
+}
+
+.rainbow:hover, .slidecontainer:hover, .black:hover{
+    transform: scale(1.2);
+}
+
+.rainbow:active, .black:active{
+    transform: scale(1.4);
+}
+
+h1{
+    margin-left: 70px;
+    font-size: 48px;
+    font-family: myFont;
+    color: rgb(34, 66, 173);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(font/Daydream.ttf);
+}
